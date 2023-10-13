@@ -1,0 +1,85 @@
+General Docker Commands:
+docker version: Display information about the Docker client and server.
+
+docker info: Display system-wide information about Docker.
+
+docker --help or docker COMMAND --help: Get help for a specific command or see general Docker help.
+
+Container Lifecycle:
+docker run IMAGE [COMMAND]: Create and start a new container from an image.
+
+docker start CONTAINER: Start a stopped container.
+
+docker stop CONTAINER: Stop a running container gracefully.
+
+docker restart CONTAINER: Restart a running or stopped container.
+
+docker pause CONTAINER: Pause a running container.
+
+docker unpause CONTAINER: Unpause a paused container.
+
+docker kill CONTAINER: Stop a running container forcefully.
+
+docker rm CONTAINER: Remove one or more containers.
+
+docker ps: List running containers.
+
+docker ps -a: List all containers (including stopped ones).
+
+docker logs CONTAINER: Fetch the logs of a container.
+
+docker exec -it CONTAINER COMMAND: Execute a command inside a running container.
+
+docker attach CONTAINER: Attach to a running container (not recommended for interactive shell use).
+
+Images:
+docker images: List available images on the system.
+
+docker pull IMAGE[:TAG]: Download an image from a registry.
+
+docker build -t IMAGE_NAME:TAG PATH: Build an image from a Dockerfile.
+
+docker rmi IMAGE: Remove an image.
+
+docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]: Create a tag for an image.
+
+docker commit CONTAINER NEW_IMAGE[:TAG]: Create a new image from a container's changes.
+
+Registry and Repository:
+docker login: Log in to a Docker registry.
+
+docker logout: Log out from a Docker registry.
+
+docker push IMAGE[:TAG]: Push an image or image changes to a registry.
+
+docker pull IMAGE[:TAG]: Pull an image or a repository from a registry.
+
+Volumes:
+docker volume create VOLUME_NAME: Create a named volume.
+
+docker volume ls: List all volumes on the system.
+
+docker volume rm VOLUME_NAME: Remove a named volume.
+
+docker run -v VOLUME_NAME:MOUNT_PATH: Mount a volume to a container.
+
+Network:
+docker network create NETWORK_NAME: Create a custom network.
+
+docker network ls: List all networks.
+
+docker network inspect NETWORK_NAME: Inspect a network.
+
+Docker Compose:
+docker-compose up: Start services defined in a docker-compose.yml file.
+
+docker-compose down: Stop and remove containers defined in a docker-compose.yml file.
+
+docker-compose build: Build or rebuild services.
+
+System Maintenance:
+docker system prune: Remove all stopped containers, unused networks, and dangling images, volumes, and networks.
+
+docker system df: Display system usage information.
+
+These are some of the most commonly used Docker commands. Depending on your specific use case, you may need additional commands and options. You can use docker --help or docker COMMAND --help to get detailed information about any specific Docker command.
