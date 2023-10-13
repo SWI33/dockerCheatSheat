@@ -1,3 +1,20 @@
+To push your Docker image to the Docker Hub, you need to follow these steps:
+
+docker build -t reposerver:1.0 . 
+
+docker login
+
+Tag your Docker image with the Docker Hub repository name:
+
+docker tag reposerver:1.0 <username>/reposerver:1.0
+
+Replace <username> with your Docker Hub username.
+
+Push your Docker image to the Docker Hub:
+
+docker push <username>/reposerver:1.0
+
+
 General Docker Commands:
 docker version: Display information about the Docker client and server.
 
