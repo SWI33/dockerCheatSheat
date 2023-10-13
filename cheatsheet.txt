@@ -14,6 +14,7 @@ Push your Docker image to the Docker Hub:
 
 docker push <username>/reposerver:1.0
 
+docker run -d dockerhubuser/reposerver:1.0
 
 General Docker Commands:
 docker version: Display information about the Docker client and server.
